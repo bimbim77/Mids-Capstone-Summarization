@@ -21,20 +21,19 @@ OAUTH_TOKEN_SECRET = config.get(section,'OAUTH_TOKEN_SECRET')
 #Post to Twitter
 try:
 	twitter = Twython(APP_KEY, APP_SECRET, OAUTH_TOKEN, OAUTH_TOKEN_SECRET)
-	try:
-		twitter.update_status(status=tweet_input)
-		print("Tweet Successful")
-	except:
-		print("Tweet not Successful!")
-
+	twitter.update_status(status=tweet_input)
 except:
+	print("Tweet not Successful!")
 	print("You need to authenticate first!")
+
 	#Authentication
 	OAUTH_TOKEN, OAUTH_TOKEN_SECRET, APP_KEY, APP_SECRET = a.auth()
-
 	twitter = Twython(APP_KEY, APP_SECRET, OAUTH_TOKEN, OAUTH_TOKEN_SECRET)
+
 	try:
 		twitter.update_status(status=tweet_input)
 		print("Tweet Successful")
 	except:
 		print("Tweet not Successful!")
+else:
+	print("Tweet Successful!")

@@ -1,6 +1,6 @@
 [TWITTER]
 app_key = cAELLleclnVvv3x7PqB5tJxrk
 app_secret = 9X8XzWeXbccs9K8JIdfssq60WsIpJfJrZSxzPlhhDSf7XP49y7
-oauth_token = 107266400-t8InoKGO69cxJAMhJarBc6yox7LYlggbiVo5GKsC
-oauth_token_secret = 49uVMAVpb0RESHQiV1YFfppm1G3eBmDZtHLLRBeeS6hvo
+oauth_token = 1359408328376393730-fnpYUsGS7YhUUVhft0EM352gONUyhn
+oauth_token_secret = frxmBlR7lrhZ3Bg36SbBiuimMPoi2hPjhDJoAkVqiYGgV
 
