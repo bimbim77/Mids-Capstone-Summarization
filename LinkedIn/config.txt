@@ -1,0 +1,7 @@
+[LINKEDIN]
+api_key = 867c8zjmb37sa9
+api_secret = poHz871MobMszCj4
+return_url = http://localhost:3001/
+access_token = AQUxpb-XLCGDvAfAxbrjBuf5YAzHmb68E2ELC6IiyuB86bSg3kY4dKtUqzGPa6mtRTzJPpnZHNHK_IrzWXxDX8xclRe5cmXuaCkkgMB6dUdqhUFaZeq2iVX1NymClDTv3QuXOvZY_fZe3IIj1GPzzYVEmf4uNElOOfWKprNiYoL9R8DtshCeVvLoeWdU5xf2-aGCdnEG-gtV2rM1R5ZGGqiZuYU7Q9JPDlX-rrB14tUCKz3N8ICyqbvxgcGdkNkzjsz4NxtBtgunviHyG8HfOLzImYNCP7br0lW5wskLpuzZx_QH0eoBrk6Hq6x847r2k03puDNhBhmmxPEV4UkelcTkJEP0Ag
+profile_id = ZBHa0AdTHB
+
