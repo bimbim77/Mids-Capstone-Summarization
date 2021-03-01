@@ -40,27 +40,24 @@ def get_access_codes(APP_KEY, APP_SECRET, OAUTH_TOKEN, OAUTH_TOKEN_SECRET,OAUTH_
 	OAUTH_TOKEN_FINAL = final_step['oauth_token']
 	OAUTH_TOKEN_SECRET_FINAL = final_step['oauth_token_secret']
 
-	return OAUTH_TOKEN_FINAL, OAUTH_TOKEN_SECRET_FINAL, APP_KEY, APP_SECRET
+	return OAUTH_TOKEN_FINAL, OAUTH_TOKEN_SECRET_FINAL
 
-def auth():
+def auth(username):
 	TW_APP_KEY, TW_APP_SECRET = get_app_tokens()
 	TW_OAUTH_TOKEN, TW_OAUTH_TOKEN_SECRET, TW_OAUTH_VERIFIER = get_auth_tokens(TW_APP_KEY,TW_APP_SECRET)
-	TW_OAUTH_TOKEN_FINAL, TW_OAUTH_TOKEN_SECRET_FINAL, TW_APP_KEY, TW_APP_SECRET = get_access_codes(TW_APP_KEY,TW_APP_SECRET,TW_OAUTH_TOKEN, TW_OAUTH_TOKEN_SECRET, TW_OAUTH_VERIFIER)
+	TW_OAUTH_TOKEN_FINAL, TW_OAUTH_TOKEN_SECRET_FINAL = get_access_codes(TW_APP_KEY,TW_APP_SECRET,TW_OAUTH_TOKEN, TW_OAUTH_TOKEN_SECRET, TW_OAUTH_VERIFIER)
 
 	#Update Credentials to Config file
 	config = configparser.ConfigParser()
 	config.read('config.txt')
 	twitter_section = config["TWITTER"]
-
-	#Update the password
-	twitter_section["OAUTH_TOKEN"] = TW_OAUTH_TOKEN_FINAL
-	twitter_section['OAUTH_TOKEN_SECRET'] = TW_OAUTH_TOKEN_SECRET_FINAL
+	twitter_section[username] = TW_OAUTH_TOKEN_FINAL + '___' + TW_OAUTH_TOKEN_SECRET_FINAL
 
 	#Write changes back to file
 	with open('config.txt', 'w') as conf:
 		config.write(conf)
 
-	return TW_OAUTH_TOKEN_FINAL, TW_OAUTH_TOKEN_SECRET_FINAL, TW_APP_KEY, TW_APP_SECRET
+	return TW_OAUTH_TOKEN_FINAL, TW_OAUTH_TOKEN_SECRET_FINAL
 
 
 
