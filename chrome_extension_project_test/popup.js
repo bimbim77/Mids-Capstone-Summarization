@@ -2,7 +2,7 @@ $(function(){
 
 	
     
-    $('#urlsubmit').click(function(){
+    $('#tw_submit').click(function(){
 
     	var queryInfo = {
     		active: true,
@@ -19,7 +19,71 @@ $(function(){
 					{article: url},
 					function(response) {
 						result = response.farewell;
-						$('#article').val(result.summary);
+
+						var tw_button = document.getElementById("tw_submit");
+						var li_button = document.getElementById("li_submit");
+						tw_button.remove();
+						li_button.remove();
+
+						var tbox = document.createElement("INPUT");
+  						tbox.setAttribute("type", "text");
+  						tbox.setAttribute("value", result.summary);
+  						tbox.setAttribute("id", "article");
+  						tbox.setAttribute("size", "40")
+  						$( ".textBox" ).append(tbox);
+
+  						var socialPost = document.createElement("INPUT");
+  						socialPost.setAttribute("type", "submit");
+  						socialPost.setAttribute("value","Post To Twitter");
+  						socialPost.setAttribute("id", "tw_post");
+  						socialPost.setAttribute("width","200px");
+  						$( ".inline" ).append(socialPost);
+  						
+					});
+		}
+			
+			
+		
+		
+    });
+});
+
+    $('#li_submit').click(function(){
+
+    	var queryInfo = {
+    		active: true,
+    		currentWindow: true
+  			};
+
+  		chrome.tabs.query(queryInfo, (tabs) => {
+    		var tab = tabs[0];
+    		var url = tab.url;
+		
+
+		if (url){
+                chrome.runtime.sendMessage(
+					{article: url},
+					function(response) {
+						result = response.farewell;
+
+						var tw_button = document.getElementById("tw_submit");
+						var li_button = document.getElementById("li_submit");
+						tw_button.remove();
+						li_button.remove();
+
+						var tbox = document.createElement("INPUT");
+  						tbox.setAttribute("type", "text");
+  						tbox.setAttribute("value", result.summary);
+  						tbox.setAttribute("id", "article");
+  						tbox.setAttribute("size", "40")
+  						$( ".textBox" ).append(tbox);
+
+  						var socialPost = document.createElement("INPUT");
+  						socialPost.setAttribute("type", "submit");
+  						socialPost.setAttribute("value","Post To LinkedIn");
+  						socialPost.setAttribute("id", "li_post");
+  						socialPost.setAttribute("width","200px");
+  						$( ".inline" ).append(socialPost);
 					});
 		}
 			

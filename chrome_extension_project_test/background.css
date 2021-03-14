@@ -1,4 +1,37 @@
 body {
-  margin: 30px;
+  margin: 15px;
   font-family: sans-serif;
+  height: 5px;
+  min-width: 400px;
+}
+
+#extension_title {
+  background-color: lightblue;
+  color: black;
+  text-align: center;
+}
+
+#inline {
+  display: inline-block; 
+  text-align: center;
+}
+
+#tw_submit {
+	font-size: 12px;
+	text-align: left;
+}
+
+#li_submit {
+	font-size: 12px;
+	text-align: right;
+}
+
+#tw_post {
+	font-size: 12px;
+	text-align: center;
+}
+
+#li_post {
+	font-size: 12px;
+	text-align: center;
 }

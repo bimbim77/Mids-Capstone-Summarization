@@ -2,15 +2,20 @@
 <html>
     <head>
         <title>Article Summary</title>
+        <link rel="stylesheet" href="background.css">
         <script src="jquery-3.6.0.min.js"></script>
         <script src="popup.js"></script>
     </head>
     <body>
-        <h1>Article Extraction Tool</h1>
+        <h1 id="extension_title">Article Extraction Tool</h1>
         
-        <input id="urlsubmit" type="submit" value="Extract Text"/>
+        <div class="inline">
+        <input id="tw_submit" type="submit" value="Generate Twitter Summary"/>
+        <input id="li_submit" type="submit" value="Generate LinkedIn Summary"/>
+        </div>
 
-        <input id="article" type="text">
-        
+        <!-- <input id="article" type="text"> -->
+        <div class = "textBox">
+        </div>
     </body>
 </html>
