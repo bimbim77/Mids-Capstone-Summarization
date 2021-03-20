@@ -1,7 +1,7 @@
 body {
   margin: 15px;
-  font-family: sans-serif;
-  height: 5px;
+  font-family: 'Dekko';
+  /*height: 10px; */
   min-width: 400px;
 }
 
@@ -17,21 +17,45 @@ body {
 }
 
 #tw_submit {
-	font-size: 12px;
-	text-align: left;
+	font-family: 'Dekko';
+	cursor: pointer;
+	padding: 4px 8px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 15.65px;
+  	margin: 2px 1px;
 }
 
 #li_submit {
-	font-size: 12px;
-	text-align: right;
+	font-family: 'Dekko';
+	cursor: pointer;
+	padding: 4px 8px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 15.65px;
+  	margin: 2px 1px;
 }
 
 #tw_post {
-	font-size: 12px;
-	text-align: center;
+	font-family: 'Dekko';
+	cursor: pointer;
+	padding: 4px 8px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 15.65px;
+  	margin: 2px 1px;
 }
 
 #li_post {
-	font-size: 12px;
-	text-align: center;
+	font-family: 'Dekko';
+	cursor: pointer;
+	padding: 4px 8px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 15.65px;
+  	margin: 2px 1px;
 }

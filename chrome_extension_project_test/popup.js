@@ -25,12 +25,12 @@ $(function(){
 						tw_button.remove();
 						li_button.remove();
 
-						var tbox = document.createElement("INPUT");
-  						tbox.setAttribute("type", "text");
-  						tbox.setAttribute("value", result.summary);
+						var tbox = document.createElement("textarea");
   						tbox.setAttribute("id", "article");
-  						tbox.setAttribute("size", "40")
+  						tbox.setAttribute("rows", "5");
+  						tbox.setAttribute("cols", "55");
   						$( ".textBox" ).append(tbox);
+  						document.getElementById("article").value = result.summary;
 
   						var socialPost = document.createElement("INPUT");
   						socialPost.setAttribute("type", "submit");
@@ -77,12 +77,12 @@ $(function(){
 						tw_button.remove();
 						li_button.remove();
 
-						var tbox = document.createElement("INPUT");
-  						tbox.setAttribute("type", "text");
-  						tbox.setAttribute("value", result.summary);
+						var tbox = document.createElement("textarea");
   						tbox.setAttribute("id", "article");
-  						tbox.setAttribute("size", "40")
+  						tbox.setAttribute("rows", "5");
+  						tbox.setAttribute("cols", "55");
   						$( ".textBox" ).append(tbox);
+  						document.getElementById("article").value = result.summary;
 
   						var socialPost = document.createElement("INPUT");
   						socialPost.setAttribute("type", "submit");
