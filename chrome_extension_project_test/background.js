@@ -17,3 +17,11 @@ var serverhost = 'http://127.0.0.1:8000';
 			return true;  // Will respond asynchronously.
 		  
 	});
+
+	chrome.runtime.onMessage.addListener(
+  		function(request, sender, sendResponse) {
+    		if( request.message === "open_new_tab" ) {
+      			chrome.tabs.create({"url": request.url});
+    }
+  	}
+	);

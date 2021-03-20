@@ -38,6 +38,12 @@ $(function(){
   						socialPost.setAttribute("id", "tw_post");
   						socialPost.setAttribute("width","200px");
   						$( ".inline" ).append(socialPost);
+
+  						$('#tw_post').click(function(){
+  							chrome.runtime.sendMessage({"message": "open_new_tab", "url": 'https://twitter.com/intent/tweet?text=' + result.summary + '&url=' + url});
+
+
+  							});
   						
 					});
 		}
@@ -92,5 +98,11 @@ $(function(){
 		
     });
 });
+
+
+
+
+
+
 
 });
