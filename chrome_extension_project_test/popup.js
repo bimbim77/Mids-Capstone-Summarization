@@ -90,7 +90,20 @@ $(function(){
   						socialPost.setAttribute("id", "li_post");
   						socialPost.setAttribute("width","200px");
   						$( ".inline" ).append(socialPost);
-					});
+
+  						$('#li_post').click(function(){
+  							var copyText = document.getElementById("article");
+  							copyText.select();
+  							copyText.setSelectionRange(0, 99999);
+  							document.execCommand("copy");
+
+  							chrome.runtime.sendMessage({"message": "open_li_tab", "url": 'https://www.linkedin.com/sharing/share-offsite/?url=' + url});
+  							
+
+  							});
+  							
+  						});
+					
 		}
 			
 			
