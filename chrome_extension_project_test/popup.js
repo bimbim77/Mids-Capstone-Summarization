@@ -16,7 +16,7 @@ $(function(){
 
 		if (url){
                 chrome.runtime.sendMessage(
-					{article: url},
+					{"message": "tw_submit", article: url},
 					function(response) {
 						result = response.farewell;
 
@@ -40,7 +40,7 @@ $(function(){
   						$( ".inline" ).append(socialPost);
 
   						$('#tw_post').click(function(){
-  							chrome.runtime.sendMessage({"message": "open_new_tab", "url": 'https://twitter.com/intent/tweet?text=' + result.summary + '&url=' + url});
+  							chrome.runtime.sendMessage({"message": "open_tw_tab", "url": 'https://twitter.com/intent/tweet?text=' + result.summary + '&url=' + url});
 
 
   							});
@@ -68,7 +68,7 @@ $(function(){
 
 		if (url){
                 chrome.runtime.sendMessage(
-					{article: url},
+                	{"message": "li_submit", article: url},
 					function(response) {
 						result = response.farewell;
 

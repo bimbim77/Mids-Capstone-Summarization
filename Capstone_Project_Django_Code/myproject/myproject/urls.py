@@ -21,5 +21,6 @@ from article import views
 urlpatterns = [
 	path('', views.index,name='index'),
     path('admin/', admin.site.urls),
-    re_path(r'^get_article_title/$',views.extract_test,name = 'extract_test')
+    re_path(r'^get_tw_article_summary/$',views.gen_tw_summary, name = 'extract_tw'),
+    re_path(r'^get_li_article_summary/$',views.gen_li_summary, name = 'extract_li')
 ]

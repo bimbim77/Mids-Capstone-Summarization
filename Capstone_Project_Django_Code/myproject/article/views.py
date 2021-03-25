@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 import re
 import urllib.request as u
 import pandas as pd
+import configparser
 
 # Create your views here.
 from django.http import HttpResponse
@@ -61,7 +62,7 @@ def summary_extractor(html):
 
     return(title,article_summary,schema)
     
-def extract_test(request):
+def gen_tw_summary(request):
     article = request.GET.get('article', None)
 
     print('article:', article)
@@ -76,3 +77,20 @@ def extract_test(request):
     print('json-data to be sent: ', data)
 
     return JsonResponse(data)
+
+def gen_li_summary(request):
+    article = request.GET.get('article', None)
+
+    print('article:', article)
+
+    title = summary_extractor(article)[0]
+
+    data = {
+        'summary': title,
+        'raw': 'Successful',
+    }
+
+    print('json-data to be sent: ', data)
+
+    return JsonResponse(data)
+
