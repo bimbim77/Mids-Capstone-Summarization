@@ -1,4 +1,5 @@
-var serverhost = 'http://127.0.0.1:8000';
+//var serverhost = 'http://127.0.0.1:8000';
+var serverhost = 'http://ec2-3-101-66-156.us-west-1.compute.amazonaws.com';
 
 	chrome.runtime.onMessage.addListener(
 		function(request, sender, sendResponse) {
