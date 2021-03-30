@@ -1,14 +1,28 @@
 body {
   margin: 15px;
   font-family: 'Dekko';
-  /*height: 10px; */
   min-width: 400px;
 }
 
 #extension_title {
-  background-color: lightblue;
+  color: black;
+  text-align: left;
+  padding: 4px 8px;
+}
+
+#extension_subtitle {
   color: black;
   text-align: center;
+  font-size: 16px;
+}
+
+#loadingScreen {
+	font-family: 'Dekko';
+	color: black;
+	text-align: center;
+	margin: 2px 1px;
+	padding: 4px 8px;
+	margin-left: 150px;
 }
 
 #inline {
@@ -23,7 +37,7 @@ body {
   	text-align: center;
   	text-decoration: none;
   	display: inline-block;
-  	font-size: 15.65px;
+  	font-size: 12.75px;
   	margin: 2px 1px;
 }
 
@@ -34,7 +48,7 @@ body {
   	text-align: center;
   	text-decoration: none;
   	display: inline-block;
-  	font-size: 15.65px;
+  	font-size: 12.75px;
   	margin: 2px 1px;
 }
 
@@ -47,6 +61,7 @@ body {
   	display: inline-block;
   	font-size: 15.65px;
   	margin: 2px 1px;
+  	margin-left: 90px;
 }
 
 #li_post {
@@ -58,4 +73,5 @@ body {
   	display: inline-block;
   	font-size: 15.65px;
   	margin: 2px 1px;
+  	margin-left: 90px;
 }

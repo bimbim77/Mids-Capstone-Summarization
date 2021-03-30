@@ -15,15 +15,23 @@ $(function(){
 		
 
 		if (url){
+				var tw_button = document.getElementById("tw_submit");
+				var li_button = document.getElementById("li_submit");
+				tw_button.remove();
+				li_button.remove();
+
+				var h2 = document.createElement("h2");
+				h2.textContent = "Loading...";
+				h2.setAttribute("id", "loading");
+				$( ".loadingScreen" ).append(h2);
+
                 chrome.runtime.sendMessage(
 					{"message": "tw_submit", article: url},
 					function(response) {
 						result = response.farewell;
 
-						var tw_button = document.getElementById("tw_submit");
-						var li_button = document.getElementById("li_submit");
-						tw_button.remove();
-						li_button.remove();
+						var loading_text = document.getElementById("loading")
+						loading_text.remove();
 
 						var tbox = document.createElement("textarea");
   						tbox.setAttribute("id", "article");
@@ -36,7 +44,8 @@ $(function(){
   						socialPost.setAttribute("type", "submit");
   						socialPost.setAttribute("value","Post To Twitter");
   						socialPost.setAttribute("id", "tw_post");
-  						socialPost.setAttribute("width","200px");
+  						socialPost.setAttribute("width","50px");
+
   						$( ".inline" ).append(socialPost);
 
   						$('#tw_post').click(function(){
@@ -67,15 +76,23 @@ $(function(){
 		
 
 		if (url){
+				var tw_button = document.getElementById("tw_submit");
+				var li_button = document.getElementById("li_submit");
+				tw_button.remove();
+				li_button.remove();
+
+				var h2 = document.createElement("h2");
+				h2.textContent = "Loading...";
+				h2.setAttribute("id", "loading");
+				$( ".loadingScreen" ).append(h2);
+
                 chrome.runtime.sendMessage(
                 	{"message": "li_submit", article: url},
 					function(response) {
 						result = response.farewell;
 
-						var tw_button = document.getElementById("tw_submit");
-						var li_button = document.getElementById("li_submit");
-						tw_button.remove();
-						li_button.remove();
+						var loading_text = document.getElementById("loading")
+						loading_text.remove();
 
 						var tbox = document.createElement("textarea");
   						tbox.setAttribute("id", "article");
