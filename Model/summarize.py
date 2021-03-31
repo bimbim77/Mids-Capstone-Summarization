@@ -1,6 +1,7 @@
 from pegasus.params import estimator_utils
 from pegasus.params import registry
 import tensorflow as tf
+import pegasus.params.all_params
 from pegasus.eval import text_eval
 from pegasus.ops import public_parsing_ops
 
