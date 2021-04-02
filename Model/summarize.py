@@ -12,7 +12,7 @@ num_shards = 1
 
 
 def summarize_linkedin(input_text, beam_size=1, beam_alpha=0.5):
-    return summarize(input_text, model_dir="./pretrained_downloaded_models/cnn_dailymail", transformer_name='xsum_transformer', beam_size=beam_size, beam_alpha=beam_alpha)
+    return summarize(input_text, model_dir="./pretrained_downloaded_models/cnn_dailymail", transformer_name='cnn_dailymail_transformer', beam_size=beam_size, beam_alpha=beam_alpha)
 
 
 def summarize_twitter(input_text, beam_size=1, beam_alpha=0.1):
