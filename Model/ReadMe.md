@@ -14,8 +14,7 @@ Run the below commands
 7. cd pretrained_downloaded_models/cnn_dailymail
 8. ```gsutil -m cp   "gs://pegasus_ckpt/cnn_dailymail/model.ckpt-210000.data-00000-of-00001"   "gs://pegasus_ckpt/cnn_dailymail/model.ckpt-210000.index"   "gs://pegasus_ckpt/cnn_dailymail/model.ckpt-210000.meta"```
 9. cd pretrained_downloaded_models/ckpt
-10. ```gsutil -m cp   "gs://pegasus_ckpt/c4.unigram.newline.10pct.96000.model"   "gs://pegasus_ckpt/c4.unigram.newline.10pct.96000.vocab"   .
-```
+10. ```gsutil -m cp   "gs://pegasus_ckpt/c4.unigram.newline.10pct.96000.model"   "gs://pegasus_ckpt/c4.unigram.newline.10pct.96000.vocab"   .```
 
 If you face any errors in the above setup, Tensorflow versions may be different in your setup. We need Tensorflow 1.x version to work
 
