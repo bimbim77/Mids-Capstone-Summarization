@@ -21,7 +21,7 @@ $(function(){
 				li_button.remove();
 
 				var h2 = document.createElement("h2");
-				h2.textContent = "Loading...";
+				h2.textContent = "Loading...summaries may take up to 60 seconds.";
 				h2.setAttribute("id", "loading");
 				$( ".loadingScreen" ).append(h2);
 
@@ -49,7 +49,7 @@ $(function(){
   						$( ".inline" ).append(socialPost);
 
   						$('#tw_post').click(function(){
-  							chrome.runtime.sendMessage({"message": "open_tw_tab", "url": 'https://twitter.com/intent/tweet?text=' + result.summary + '&url=' + url});
+  							chrome.runtime.sendMessage({"message": "open_tw_tab", "url": 'https://twitter.com/intent/tweet?text=' + document.getElementById("article").value + '&url=' + url});
 
 
   							});
@@ -82,7 +82,7 @@ $(function(){
 				li_button.remove();
 
 				var h2 = document.createElement("h2");
-				h2.textContent = "Loading...";
+				h2.textContent = "Loading...summaries may take up to 60 seconds.";
 				h2.setAttribute("id", "loading");
 				$( ".loadingScreen" ).append(h2);
 
