@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
 
-  "name": "Article Summarization",
-  "description": "This extension gives you an article summary.",
+  "name": "ShortText - Article Summaries",
+  "description": "This extension auto-generates summaries of news articles, and allows you to post them to your Twitter or Linkedin account.",
   "version": "1.0",
   "icons": {
     "32": "icons/icon32.png",
@@ -28,15 +28,9 @@
 
   "content_security_policy": "script-src 'self' https://*.google.com 'unsafe-eval'; object-src 'self'",
   "permissions": [
-    "tabs",
     "activeTab",
-    "<all_urls>",
     "clipboardRead",
-    "http://127.0.0.1:8000/",
-    "http://ec2-13-57-27-118.us-west-1.compute.amazonaws.com:8000/",
-    "background",
-        "identity",
-        "notifications"
+    "http://ec2-13-57-27-118.us-west-1.compute.amazonaws.com:8000/"
   ]
 }
 
