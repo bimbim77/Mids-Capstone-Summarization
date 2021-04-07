@@ -3,7 +3,7 @@
 
   "name": "ShortText - Article Summaries",
   "description": "This extension auto-generates summaries of news articles, and allows you to post them to your Twitter or Linkedin account.",
-  "version": "1.0",
+  "version": "1.1",
   "icons": {
     "32": "icons/icon32.png",
     "16": "icons/icon16.png"
