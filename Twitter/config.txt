@@ -1,5 +1,0 @@
-[TWITTER]
-app_key = cAELLleclnVvv3x7PqB5tJxrk
-app_secret = 9X8XzWeXbccs9K8JIdfssq60WsIpJfJrZSxzPlhhDSf7XP49y7
-capstoneprojec9 = 1359408328376393730-cmLC7oJH76rkuXx0CFJpdFECAFeu19___p96hsM2nmx8Etp4YBNTx0z24u268ysLLs10ptWVG91DKx
-
