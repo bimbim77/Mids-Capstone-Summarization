@@ -1,12 +1,26 @@
 # Mids-Capstone-Summarization
 
-## Summarization of articles for social media marketing
+## Summarization of news articles for social media marketing
+UC Berkeley MIDS Program
+Spring 2021 Capstone Project
 
 ### Problem
-Companies generate whitepapers, blogs, competitive reports and other infomercial content to showcase the benefits of using their products. A good short text summarization goes a long way in capturing the attention of potential customers who won't through the document in its entirety unless they seem relevant and interesting. In the current world, potential customers are segmented across different kinds of social networks like Twitter, Facebook, Linkedin. A company would like to target customers in these different networks by running various advertising campaigns with advertisements containing different summaries of the same underlying content to get the user's attention many times in order to be effective. We will be using abstractive text summarization techniques using language models trained on domain specific open data.
+MIDS Capstone Team "ShortText" is focused on the problem of reducing manual and human text summarization for high velocity content marketing for marketing teams globally.
+
+Our goal for this solution is to build a text summarization tool that captures the essence of the content in these articles that could be used to post messages in social media platforms (LinkedIn and Twitter) for running its advertisement campaigns.
+
+Using CNN news training data and XSUM data, we are applying the state of the art abstractive summarization - PEGASUS model for our MVP for teams working on Social Media Marketing; we intend to use our MVP to contribute to peer and industry learning about the use of abstractive summarization to alleviate the need for human/manual text summarization
+
+Our Chrome Extension application automates the summarization process for content from popular news websites , and facilitates the posting of this content to the Twitter and LinkedIn social media channels with summaries tailored to the post length restrictions of each platform.
 
 ## Target User / Customer
-Marketing Team in a Company
+Marketing Team in News organizations
+
+## Supported Websites
+Currently works on CNN, New York Times, BBC, and ESPN. Additional websites in development.
+
+## Usage Notes
+We do not have the EC2 instance that serves as the backend to our Chrome Extension running at all times due to prohibitive cost. The instance and the web server powered by the instance will need to be manually started in order for the Chrome Extension to function.
 
 ## Data
 TensorFlow Datasets for Summarization - across various domains (news, email, research paper, wiki, patents, legislative bills etc)
@@ -28,4 +42,9 @@ Summarization - HuggingFace Transformer
 arXiv:1912.08777 - PEGASUS: Pre-training with Extracted Gap-sentences for Abstractive Summarization  
 arXiv:2007.14062 - Big Bird: Transformers for Longer Sequences
 
+## Team Contact Information
+Imran Manji - imran.manji@ischool.berkeley.edu 
+Julie Nguyen - julie.nguyen@ischool.berkeley.edu
+Jeya Seenivasagam - ksjeyabarani@berkeley.edu
+Vaishnavi Rajagopal - vaishnavi_raj@berkeley.edu
 
