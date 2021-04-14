@@ -20,27 +20,27 @@ Marketing Team in News organizations
 Currently works on CNN, New York Times, BBC, and ESPN. Additional websites in development.
 
 ## Usage Notes
-We do not have the EC2 instance that serves as the backend to our Chrome Extension running at all times due to prohibitive cost. The instance and the web server powered by the instance will need to be manually started in order for the Chrome Extension to function.
+We do not have the EC2 instance that serves as the backend to our Chrome Extension running at all times due to prohibitive cost. The instance and the web server powered by the instance will need to be started for the Chrome Extension to function.
 
 ## Data
-TensorFlow Datasets for Summarization - across various domains (news, email, research paper, wiki, patents, legislative bills etc)
-AQUAINT Corpus of English News Text - Contains news articles from the Associated Press and New York Times.
-Document Understanding Conferences Data  - Text Summarization datasets from DUC
-TAC Data  - Past TAC Datasets for text summarization
-English Gigaword - Data Corpus from Linguistic Data Consortium 
-Live Blog Corpus  - Online Blog Corpus 
+* TensorFlow Datasets for Summarization - across various domains (news, email, research paper, wiki, patents, legislative bills etc)
+* AQUAINT Corpus of English News Text - Contains news articles from the Associated Press and New York Times.
+* Document Understanding Conferences Data  - Text Summarization datasets from DUC
+* TAC Data  - Past TAC Datasets for text summarization
+* English Gigaword - Data Corpus from Linguistic Data Consortium 
+* Live Blog Corpus  - Online Blog Corpus 
 
 ## Possible data science techniques
-NLP
-Abstractive Text Summarization
-Transformer encoder-decoder models
-Self-Supervised Objective for Summarization
-Language Models
+* NLP
+* Abstractive Text Summarization
+* Transformer encoder-decoder models
+* Self-Supervised Objective for Summarization
+* Language Models
 
 ## Related research/products
-Summarization - HuggingFace Transformer
-arXiv:1912.08777 - PEGASUS: Pre-training with Extracted Gap-sentences for Abstractive Summarization  
-arXiv:2007.14062 - Big Bird: Transformers for Longer Sequences
+1. Summarization - HuggingFace Transformer
+2. arXiv:1912.08777 - PEGASUS: Pre-training with Extracted Gap-sentences for Abstractive Summarization  
+3. arXiv:2007.14062 - Big Bird: Transformers for Longer Sequences
 
 ## Team Contact Information
 Imran Manji - imran.manji@ischool.berkeley.edu 
