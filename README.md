@@ -1,7 +1,7 @@
 # Mids-Capstone-Summarization
 
 ## Summarization of news articles for social media marketing
-UC Berkeley MIDS Program
+UC Berkeley MIDS Program 
 Spring 2021 Capstone Project
 
 ### Problem
@@ -44,7 +44,7 @@ arXiv:2007.14062 - Big Bird: Transformers for Longer Sequences
 
 ## Team Contact Information
 Imran Manji - imran.manji@ischool.berkeley.edu 
-Julie Nguyen - julie.nguyen@ischool.berkeley.edu
-Jeya Seenivasagam - ksjeyabarani@berkeley.edu
-Vaishnavi Rajagopal - vaishnavi_raj@berkeley.edu
+Julie Nguyen - julie.nguyen@ischool.berkeley.edu 
+Jeya Seenivasagam - ksjeyabarani@berkeley.edu 
+Vaishnavi Rajagopal - vaishnavi_raj@berkeley.edu 
 
