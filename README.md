@@ -17,7 +17,7 @@ Our Chrome Extension application automates the summarization process for content
 Marketing Team in News organizations
 
 ## Supported Websites
-Currently works on CNN, New York Times, BBC, and ESPN. Additional websites in development.
+Currently works on CNN, BBC, and ESPN. Additional websites in development.
 
 ## Usage Notes
 We do not have the EC2 instance that serves as the backend to our Chrome Extension running at all times due to prohibitive cost. The instance and the web server powered by the instance will need to be started for the Chrome Extension to function.
